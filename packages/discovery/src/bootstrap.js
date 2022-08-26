@@ -4,7 +4,7 @@ import App from './App';
 
 const mount = (element) => {
   ReactDOM.render(
-    <App></App>, element
+    <App />, element
   )
 };
 

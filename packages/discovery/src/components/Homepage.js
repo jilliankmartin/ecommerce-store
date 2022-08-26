@@ -1,9 +1,22 @@
-import React from "react";
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+import { Link } from 'react-router-dom';
 
-export const HomePage = () => {
+export default function Homepage() {
+
   return (
-    <div>I'm the homepage page</div>
-  )
-};
-
-export default HomePage;
+    <React.Fragment>
+      <main>
+        <div>I'm the homepage!</div>
+          <Grid item>
+            <Link to="/products">
+              <Button variant="contained" color="primary">
+                Products
+              </Button>
+            </Link>
+          </Grid>
+      </main>
+    </React.Fragment>
+  );
+}
