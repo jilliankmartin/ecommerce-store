@@ -19,4 +19,4 @@ export default function Homepage() {
       </main>
     </React.Fragment>
   );
-}
+};
