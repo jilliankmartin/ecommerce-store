@@ -1,8 +1,10 @@
 import React from 'react';
-import {mount} from 'discovery/DiscoveryApp';
-
-console.log(mount)
+import DiscoveryApp from './components/DiscoveryApp';
 
 export default () => {
-  return <h1>Hi There</h1>
+  return <div>
+    <h1>Hi There</h1>
+    <hr/>
+    <DiscoveryApp />
+    </div>
 }
