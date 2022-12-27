@@ -15,7 +15,7 @@ const prodConfig = {
     new ModuleFederationPlugin({
       name: 'container',
       remotes: {
-        discovery: `discovery@${domain}/discovery/remoteEntry.js`
+        discovery: `discovery@${domain}/discovery/latest/remoteEntry.js`
       },
       shared: packageJson.dependencies
     })
